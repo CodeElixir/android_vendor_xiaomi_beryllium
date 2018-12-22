@@ -31,8 +31,8 @@
 /(vendor|system/vendor)/bin/iwpriv		u:object_r:wcnss_service_exec:s0
 /(vendor|system/vendor)/bin/sscrpcd		u:object_r:sensors_exec:s0
 /(vendor|system/vendor)/bin/mlipayd		u:object_r:hal_mlipay_default_exec:s0
-/(vendor|system/vendor)/bin/mtd@1.2		u:object_r:hal_mtdservice_default_exec:s0
 /(vendor|system/vendor)/bin/mtd@1.1		u:object_r:hal_mtdservice_default_exec:s0
+/(vendor|system/vendor)/bin/mtd@1.2		u:object_r:hal_mtdservice_default_exec:s0
 /(vendor|system/vendor)/bin/hw/rild		u:object_r:rild_exec:s0
 /(vendor|system/vendor)/bin/netmgrd		u:object_r:netmgrd_exec:s0
 /(vendor|system/vendor)/bin/qrtr-ns		u:object_r:qrtr_exec:s0
@@ -288,6 +288,7 @@
 /vendor/lib(64)?/libdrm\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgsl\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libdiag\.so		u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libalCFR\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libbccQTI\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libOpenCL\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmpbase\.so		u:object_r:same_process_hal_file:s0
@@ -311,6 +312,7 @@
 /vendor/lib(64)?/libllvm-glnext\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libtime_genoff\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libSuperSensor\.so		u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libVDClearShot\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgrallocutils\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libadreno_utils\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmialgoengine\.so		u:object_r:same_process_hal_file:s0
@@ -336,6 +338,7 @@
 /vendor/lib(64)?/libhalide_hexagon_host\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmisegment_front_845\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libHalSuperSensorServer\.so		u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libVDDualCameraClearShot\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_low_light_hdr\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_dualcam_refocus\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.qti\.hardware\.perf@1\.0\.so		u:object_r:same_process_hal_file:s0
@@ -427,8 +430,8 @@
 /persist/FTM_AP(/.*)?		u:object_r:vendor_persist_mmi_file:s0
 /persist/camera(/.*)?		u:object_r:camera_persist_file:s0
 /firmware/image(/.*)?		u:object_r:firmware_file:s0
-/persist/subsys(/.*)?		u:object_r:persist_subsys_file:s0
 /data/local/log(/.*)?		u:object_r:offlinelog_file:s0
+/persist/subsys(/.*)?		u:object_r:persist_subsys_file:s0
 /vendor/package(/.*)?/app(/.*)?		u:object_r:vendor_app_file:s0
 /vendor/package(/.*)?/overlay(/.*)?		u:object_r:vendor_overlay_file:s0
 /data/vendor/rfs.*		u:object_r:rfs_file:s0

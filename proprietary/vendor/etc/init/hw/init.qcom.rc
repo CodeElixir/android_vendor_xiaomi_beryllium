@@ -880,6 +880,13 @@ service tcpdump /vendor/bin/tcpdump -i any -W 2 -C 2 -s 134 -w /data/vendor/wlan
     disabled
     oneshot
 
+service tcpdump_full /vendor/bin/tcpdump -i any -W 3 -C 40 -w /data/vendor/wlan_logs/tcpdump_full.pcap
+    class main
+    user root
+    group root wifi
+    disabled
+    oneshot
+
 service sniffer /vendor/bin/tcpdump -i wlan0 -w /data/vendor/wlan_logs/sniffer.pcap
     class main
     user root
