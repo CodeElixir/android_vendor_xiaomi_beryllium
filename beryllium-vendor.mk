@@ -342,7 +342,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/vendor/bin/init.qcom.debug.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.debug.sh \
     vendor/xiaomi/beryllium/proprietary/vendor/bin/init.qcom.early_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.early_boot.sh \
     vendor/xiaomi/beryllium/proprietary/vendor/bin/init.qcom.efs.sync.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.efs.sync.sh \
-    vendor/xiaomi/beryllium/proprietary/vendor/bin/init.qcom.post_boot.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.post_boot.sh \
     vendor/xiaomi/beryllium/proprietary/vendor/bin/init.qcom.sdio.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sdio.sh \
     vendor/xiaomi/beryllium/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/xiaomi/beryllium/proprietary/vendor/bin/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh \
